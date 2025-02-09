@@ -1,0 +1,26 @@
+.Settings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting-button {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 335px;
+    height: 72px;
+    border-radius: 20px;
+    border: 3px solid black;
+
+    padding: 0 1em;
+    box-shadow: var(--shadow);
+}
+
+.setting-button:hover {
+    border-color: var(--dark-purple);
+    box-shadow: var(--shadow-hover);
+}
+
+.highlighted {
+    background-color: yellowgreen;
+}

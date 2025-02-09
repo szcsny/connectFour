@@ -1,0 +1,37 @@
+#main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu-logo {
+    margin-bottom: 4em;
+}
+
+.menu-button {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 335px;
+    height: 72px;
+    border-radius: 20px;
+    border: 3px solid black;
+
+    margin-bottom: 1em;
+    padding: 0 1em;
+    box-shadow: var(--shadow);
+}
+
+.menu-button:hover {
+    border-color: var(--dark-purple);
+    box-shadow: var(--shadow-hover);
+}
+
+#pvp-button {
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

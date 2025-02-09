@@ -1,6 +1,6 @@
-import React from "react";
+import "./Rules.css";
 
-export default function Rules(props) {
+export default function Rules({switchPage}) {
     return (
         <div id="rules">
             <h1 className="rules-title">Rules</h1>
@@ -16,7 +16,7 @@ export default function Rules(props) {
                 <li><span className="li-num">3</span>The game ends when there is a 4-in-a-row or a stalemate.</li>
                 <li><span className="li-num">4</span>The starter of the previous game goes second on the next game.</li>
             </ol>
-            <button onClick={() => props.switchPage("Menu")} id="rules-close-button"></button>
+            <button onClick={() => switchPage("Menu")} id="rules-close-button"></button>
         </div>
     )
 }

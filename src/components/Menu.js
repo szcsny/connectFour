@@ -1,18 +1,18 @@
-import React from "react";
-import LOGO from "./images/logo.svg";
-import PVPIMAGE from "./images/player-vs-player.svg"
+import LOGO from "../images/logo.svg";
+import PVPIMAGE from "../images/player-vs-player.svg";
 
-export default function Menu(props) {
+import './Menu.css';
 
+export default function Menu({switchPage}) {
 
     return (
         <div id="main-menu">
             <img className="menu-logo" src={LOGO} />
-                <button onClick={() => props.switchPage("GameScreen")} className="menu-button" id="pvp-button">
+                <button onClick={() => switchPage("Settings")} className="menu-button" id="pvp-button">
                     Play vs player
                     <img src={PVPIMAGE} />
                 </button>
-                <button onClick={() => props.switchPage("Rules")} className="menu-button" id="rules-button">Game rules</button>
+                <button onClick={() => switchPage("Rules")} className="menu-button" id="rules-button">Game rules</button>
         </div>
     )
 }

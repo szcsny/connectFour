@@ -1,0 +1,48 @@
+.EndPanel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    left: calc(50% - 300px);
+    max-width: 600px;
+    width: 70%;
+    z-index: 11;
+    padding: 1em;
+}
+
+.EndPanel h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.EndPanel img {
+    transform: scaleX(-1);
+    height: 200px;
+    margin: 2em;
+}
+
+.EndPanel button {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 20px;
+    border: 3px solid #000;
+    box-shadow: var(--shadow);
+}
+
+.EndPanel button:hover {
+    border: 3px solid var(--dark-purple);
+    box-shadow: var(--shadow-hover);
+}
+
+.menu-btn {
+    background-color: var(--pink);
+    color: #fff;
+}
+
+.confetti {
+    position: fixed;
+    top: 30%;
+}

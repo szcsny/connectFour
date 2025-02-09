@@ -1,0 +1,43 @@
+.RestartPanel {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    margin-top: 12em;
+    background-color: var(--purple);
+    border: 3px solid #000;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    max-width: 480px;
+    z-index: 11;
+    padding: 1em;
+}
+
+.RestartPanel h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin: .5em 0;
+}
+
+.RestartPanel button {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 20px;
+    border: 3px solid #000;
+    box-shadow: var(--shadow);
+}
+
+.RestartPanel button:hover {
+    border: 3px solid var(--dark-purple);
+    box-shadow: var(--shadow-hover);
+}
+
+.restart-button {
+    background-color: var(--pink);
+    color: #fff;
+}

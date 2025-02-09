@@ -1,0 +1,55 @@
+.GameBoard {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.indicator {
+    display: none;
+}
+
+.GameBoard:hover .indicator {
+    display: block;
+    position: absolute;
+    top: -2.25rem;
+}
+
+.board-white {
+    bottom: 40px;
+    left: 0; right: 0;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.board-black {
+    position: absolute;
+    z-index: 1;
+}
+
+#chip-container {
+    position: absolute;
+    margin: 0 auto;
+    height: 84%;
+    z-index: 4;
+    padding-top: 6px;
+    padding-left: 4px;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-rows: repeat(6, 47px);
+    grid-template-columns: repeat(7, 46.5px);
+}
+
+#bottom-color {
+    position: fixed;
+    background-color: var(--dark-purple);
+    width: 100%;
+    top: 75%;
+    bottom: 0;
+    border-radius: 20% 20% 0 0;
+}

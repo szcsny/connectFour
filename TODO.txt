@@ -1,0 +1,12 @@
+- scoring system implementation             ✅
+- implement setup screen with
+    - color setup
+    - player name setup
+    - number of rounds setup
+- implementing solution for a tie game      ✅
+- switch starting player on game end        ✅
+- stop timer when in-game menu is opened    ✅
+- loading screens                           ✅                       
+- Animate chips falling into place          
+- highlight column on hover                 ✅
+- highlight winline                         ✅

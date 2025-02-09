@@ -1,0 +1,60 @@
+#rules {
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1em;
+    padding: 1.5em;
+    max-width: 480px;
+
+    border-radius: 30px;
+    border: 3px solid #000;
+    box-shadow: var(--shadow);
+}
+
+.rules-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 56px;
+}
+
+.rules-subtitle {
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+#rules ol {
+    margin: 0 0 2em;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#rules ol li {
+    display: flex;
+    margin-bottom: .3em;
+}
+
+.li-num {
+    font-weight: bold;
+    margin-right: 1em;
+    width: 10px;
+}
+
+#rules-close-button {
+    padding: 0;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    bottom: -40px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("../images/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#rules-close-button:hover {
+    background-image: url("../images/icon-check-hover.svg");
+}
